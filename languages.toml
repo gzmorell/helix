@@ -1029,7 +1029,7 @@ injection-regex = "cmake"
 
 [[grammar]]
 name = "cmake"
-source = { git = "https://github.com/uyha/tree-sitter-cmake", rev = "6e51463ef3052dd3b328322c22172eda093727ad" }
+source = { git = "https://github.com/gzmorell/tree-sitter-cmake", rev = "de19956ed73f9cba75314b6eadfcc0b90b34e32c" }
 
 [[language]]
 name = "make"
