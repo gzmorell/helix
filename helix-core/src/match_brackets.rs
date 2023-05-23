@@ -47,7 +47,7 @@ fn find_pair(syntax: &Syntax, doc: &Rope, pos: usize, traverse_parents: bool) ->
     let tree = syntax.tree();
     let pos = doc.char_to_byte(pos);
 
-    let mut node = tree.root_node().named_descendant_for_byte_range(pos, pos)?;
+    let mut node = tree.root_node().descendant_for_byte_range(pos, pos)?;
 
     loop {
         let (start_byte, end_byte) = surrounding_bytes(doc, &node)?;
